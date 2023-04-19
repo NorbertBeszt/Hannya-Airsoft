@@ -5,12 +5,19 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Hannya Airsoft</title>
 	<style>
-		#AboutUs {
-			color: whitesmoke;
-			background-color: darkslategray;
+		.d-block {
+			height: 900px;
 		}
-		html {
-			background-color: darkslategray;
+		#Form {
+			margin-bottom: 30px;
+			margin-top: 30px;
+		}
+		.btn {
+			text-align: center;
+		}
+		h3 {
+			text-align: center;
+			margin-bottom: 50px;
 		}
 		h1 {
 			font-size: 3rem;
@@ -24,6 +31,9 @@
 			text-align: justify;
 		}
 		@media only screen and (max-width: 768px) {
+			.d-block {
+				height: 450px;
+			}
 			header {
 				padding: 10px;
 			}
@@ -36,22 +46,33 @@
 				display: block;
 			}
 		}
+		@media only screen and (max-height: 450px) {
+			.d-block {
+				height: 350px;
+			}
+		}
+		@media only screen and (max-height: 800px) {
+			.d-block {
+				height: 450px;
+			}
+		}
 	</style>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
 </head>
-<body>
-	<nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark" data-bs-theme="dark">
+<body class="bg-dark text-light">
+	<div id="top"></div>
+	<nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark fixed-top" data-bs-theme="dark">
     <div class="container-fluid">
       <img src="Hannya-Mask-580x386.png" alt="" class="">
-      <a class="navbar-brand" href="#">Hannya Airsoft</a>
+      <a class="navbar-brand" href="#top">Hannya Airsoft</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-          <a class="nav-link" href="#">Features</a>
-          <a class="nav-link" href="#">Pricing</a>
+          <a class="nav-link active" aria-current="page" href="#AboutUs">Rólunk</a>
+          <a class="nav-link" href="#Form">Pályabérlés, Versenyszervezés</a>
+          <a class="nav-link" href="#Versenyeink">Versenyeink</a>
         </div>
       </div>
     </div>
@@ -84,7 +105,27 @@
   </div>
   <div id="AboutUs">
 		<h1>About Us</h1>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor semper mauris, vel scelerisque felis sagittis et. Fusce auctor mi sit amet nibh fringilla, ac malesuada ipsum feugiat. Quisque euismod bibendum velit id lobortis. Sed malesuada lobortis ultricies. Integer at tellus gravida, dignissim tortor a, varius ipsum. Pellentesque euismod tincidunt felis, non cursus turpis eleifend non. Sed pulvinar sagittis eros, quis malesuada velit commodo nec. Nullam tincidunt nulla vel sagittis vulputate. Sed quis augue a lorem bibendum cursus. Integer in lorem ut purus egestas pharetra non non dolor. </p>
+		<p>Részt szeretbél venni egy versenyen? Vagy kibérelnéd a pályáink egyikét? Akkor jó helyen jársz! Airsoft versenyek rendezésével foglalkozunk lassan 1 éve! <br>
+			Miért válassz minket?
+			<ul>
+				<li>Gyors versenyszervezés</li>
+				<li>Hatalmas fegyverarzenál</li>
+				<li>Kisegítő Support csapat, akik minden kérdésedre válaszolnak</li>
+			</ul>
+		</p>
+	</div>
+	<h3>Gyere hozzánk, és érezd jól magad!</h3>
+	<div id="Form" class="text-center">
+		<h1>Pályabérlés, Versenyjelentkezés</h1>
+		<a href="form.html" class="btn btn-light btn-lg">Továbblépés >></a>
+	</div>
+	<div id="Versenyeink">
+		<h1>Versenyeink</h1>
+		<table>
+			<tr><td>2022. 05. 22.</td> <td>Nagymányok</td></tr>
+			<tr><td>2022. 08. 19.</td><td>Újtelek</td></tr>
+			<tr><td>2023. 01. 08.</td><td>Újtelek</td></tr>
+		</table>
 	</div>
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </body>
